@@ -1,0 +1,76 @@
+# Ignore IDE files
+.idea/
+.vscode/
+.eclipse/
+
+# Ignore build and target directories
+target/
+build/
+
+# Ignore Maven and Gradle files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+settings.gradle
+gradle.properties
+
+# Ignore Java and React build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.gz
+*.bz2
+*.lz4
+*.xz
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.o
+*.obj
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.o
+*.obj
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# Ignore React and Node.js files
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+yarn-debug.log
+yarn-error.log
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.Trash-1000
+.Trash
+
+# Ignore miscellaneous files
+*.iml
+*.ipr
+*.iws
+*.gitattributes
+*.gitmodules
+*.gitignore
