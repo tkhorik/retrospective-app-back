@@ -4,14 +4,19 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "`user`") // Use backticks to escape the table name
+@Table(name = "`user`", uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String username;
+
+    @Column(nullable = false)
     private String password;
+
+    @Column(unique = true, nullable = false)
     private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -60,6 +65,4 @@ public class User {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
-
-    // Getters and setters
 }
