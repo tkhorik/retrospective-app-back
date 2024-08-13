@@ -22,6 +22,12 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://spring_postgres_db:5432/mydatabase
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: password
+    labels:
+      - "traefik.http.routers.app.rule=Host(`yourdomain.com`)"
+      - "traefik.http.routers.app.entrypoints=websecure"
+      - "traefik.http.routers.app.tls.certresolver=letsencrypt"
+    networks:
+      - dokploy-network
 
 volumes:
   postgres_data:
