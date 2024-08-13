@@ -1,7 +1,7 @@
 # Use a base image with Java
 FROM openjdk:17-jdk-slim
 
-# Set the working directory
+# Set the working directory.
 WORKDIR /app
 
 # Copy the packaged jar file into the Docker image
