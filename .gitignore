@@ -13,6 +13,7 @@ pom.xml.releaseBackup
 pom.xml.next
 settings.gradle
 gradle.properties
+.gradle
 
 # Ignore Java and React build artifacts
 *.class
